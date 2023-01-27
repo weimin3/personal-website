@@ -1,6 +1,6 @@
 baseurl: /
 languageCode: en-us
-title: Hugo Ivy
+title: wm yang
 theme: "hugo-ivy"
 googleAnalytics: ""
 disqusShortname: ""
@@ -30,8 +30,8 @@ menu:
       url: "/index.xml"
 
 params:
-  description: "A Hugo theme ported from the static site generator Ivy."
-  footer: "&copy; [Yihui Xie](https://yihui.org) 2017-{Year} | [Github](https://github.com/yihui)"
+  description: "this is Weimin's website"
+  footer: "&copy; [Weimin Yang](https://wmyang.netlify.app) {Year} | [Github](https://github.com/weimin3)"
   highlightjsLang: ["latex"]
   highlightjsTheme: "github"
   highlightjsVersion: "11.7.0"
