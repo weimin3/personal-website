@@ -2,10 +2,10 @@ baseurl: "https://wmyang.netlify.app/"
 languageCode: en-us
 title: "Weimin Yang "
 theme: "hugo-ivy"
-googleAnalytics: ""
-disqusShortname: ""
+# googleAnalytics: ""
+# disqusShortname: ""
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
-#preserveTaxonomyNames: true
+# preserveTaxonomyNames: true
 hasCJKLanguage: true
 enableEmoji: true
 footnotereturnlinkcontents: ↩
@@ -21,16 +21,50 @@ menu:
       url: "/"
       weight: 1
     - name: "About"
-      url: "/about/"
+      url: "/en/about/"
       weight: 2
-    - name: "Categories"
-      url: "/categories/"
+    - name: "关于"
+      url: "/cn/about/"
       weight: 3
-    - name: "Tags"
-      url: "/tags/"
+  en:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      url: "/en/about/"
+      weight: 2
+    - name: "Blog"
+      url: "/en/"
+      weight: 3
+    - name: "Vitae"
+      url: "/en/vitae/"
       weight: 4
-    - name: "Subscribe"
-      url: "/index.xml"
+    - name: "中文"
+      url: "/cn/"
+      weight: 5
+  cn:
+    - name: "首页"
+      url: "/"
+      weight: 1
+    - name: "关于"
+      url: "/cn/about/"
+      weight: 2
+    - name: "日志"
+      url: "/cn/"
+      weight: 3
+    - name: "简历"
+      url: "/cn/vitae/"
+      weight: 4
+    - name: "菜谱"
+      url: "/cn/recipe/"
+      weight: 5
+    - name: "货币即艺术品"
+      url: "/cn/kids/"
+      weight: 6
+    - name: "English"
+      url: "/en/"
+      weight: 7 
+      
 
 params:
   description: "this is Weimin's website"
