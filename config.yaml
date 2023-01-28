@@ -67,10 +67,27 @@ menu:
       
 
 params:
-  description: "this is Weimin's website"
+  description: "Welcome! Personal website of Weimin Yang"
   footer: "&copy; [Weimin Yang](https://wmyang.netlify.app) {Year} | [Github](https://github.com/weimin3)"
+  footer: "&copy; [Weimin Yang](https://wmyang.netlify.app) {Year} "
+  customJS:
+    - "comment-utils.js"
+    - "fix-toc.js"
+    - "center-img.js"
+    - "right-quote.js"
+    - "no-highlight.js"
+    - "fix-footnote.js"
+    - "math-code.js"
+    - "hash-notes.js"
+    - "toggle-notes.js"
+    - "post-nav.js"
+    - "external-link.js"
+    - "alt-title.js"
+    - "header-link.js"
+  githubContentURL: "https://github.com/yihui/yihui.org/edit/master/content/"
   highlightjsLang: ["latex"]
   highlightjsTheme: "github"
+  highlightjsTheme: "base16/heetch-light"
   highlightjsVersion: "11.7.0"
 
 markup:
