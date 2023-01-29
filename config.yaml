@@ -12,8 +12,10 @@ footnotereturnlinkcontents: ↩
 rssLimit: 10
 
 permalinks:
-  note: /note/:year/:month/:day/:slug/
-  post: /post/:year/:month/:day/:slug/
+  cn: "/:sections/:year/:month/:slug/"
+  en: "/:sections/:year/:month/:slug/"
+  #note: /note/:year/:month/:day/:slug/
+  #post: /post/:year/:month/:day/:slug/
 
 menu:
   main:
@@ -59,7 +61,8 @@ menu:
       url: "/cn/recipe/"
       weight: 5
     - name: "货币即艺术品"
-      url: "/cn/kids/"
+      url: "/cn/money/"
+      #url: "/cn/kids/"
       weight: 6
     - name: "English"
       url: "/en/"
@@ -69,7 +72,7 @@ menu:
 params:
   description: "Welcome! Personal website of Weimin Yang"
   footer: "&copy; [Weimin Yang](https://wmyang.netlify.app) {Year} | [Github](https://github.com/weimin3)"
-  footer: "&copy; [Weimin Yang](https://wmyang.netlify.app) {Year} "
+  #footer: "&copy; [Weimin Yang](https://wmyang.netlify.app) {Year} "
   customJS:
     - "comment-utils.js"
     - "fix-toc.js"
@@ -84,11 +87,38 @@ params:
     - "external-link.js"
     - "alt-title.js"
     - "header-link.js"
-  githubContentURL: "https://github.com/yihui/yihui.org/edit/master/content/"
+  #githubContentURL: "https://github.com/yihui/yihui.org/edit/master/content/"
+  
+  
   highlightjsLang: ["latex"]
-  highlightjsTheme: "github"
+  #highlightjsTheme: "github"
   highlightjsTheme: "base16/heetch-light"
   highlightjsVersion: "11.7.0"
+  
+   logo:
+    en:
+      img: "/images/logo.png"
+      url: "/"
+      alt: "Weimin Yang"
+      tag: ""
+   
+
+  author:
+    en: "Weimin Yang"
+    cn: "杨尚豫"
+    
+
+  lang:
+    edit:
+      cn: "编辑"
+    license:
+      cn: "版权"
+    subscribe:
+      cn: "订阅"
+
+blackfriday:
+    extensionsmask: ["noIntraEmphasis"]
+    fractions: false
 
 markup:
   highlight:
@@ -96,3 +126,7 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    parser:
+      autoHeadingIDType: blackfriday
+  tableOfContents:
+    startLevel: 1
