@@ -60,7 +60,7 @@ menu:
     - name: "菜谱"
       url: "/cn/recipe/"
       weight: 5
-    - name: "货币即艺术品"
+    - name: "货币即艺术"
       url: "/cn/money/"
       #url: "/cn/kids/"
       weight: 6
